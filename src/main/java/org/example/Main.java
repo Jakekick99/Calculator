@@ -19,6 +19,7 @@ public class Main {
                 "4. Division\n" +
                 "5. Exit");
         Scanner input = new Scanner(System.in);
+        System.out.println("change");
 //        int option = input.nextInt();
 //        switch(option){
 //            case
