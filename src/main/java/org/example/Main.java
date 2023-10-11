@@ -1,16 +1,12 @@
 package org.example;
 
-import java.util.Scanner;
-import java.util.logging.LogManager;
-import java.util.logging.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
 public class Main {
-    private static final Logger logger = LogManager.getLogManager().getLogger(String.valueOf(Main.class));
+    private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it
         System.out.println("-----Welcome to Calculator-----\n" +
                 "Choose your operation\n" +
                 "1. Addition\n" +
@@ -19,10 +15,45 @@ public class Main {
                 "4. Division\n" +
                 "5. Exit");
         Scanner input = new Scanner(System.in);
-        System.out.println("change");
-//        int option = input.nextInt();
-//        switch(option){
-//            case
-//        }
+        int option = input.nextInt();
+        System.out.println("Enter 1st operand: ");
+        int op1 = input.nextInt();
+        System.out.println("Enter 2nd operand: ");
+        int op2 = input.nextInt();
+        switch(option){
+            case 1:
+                System.out.println("--------Result is--------\n" +
+                        op1+" + "+op2+" = "+add(op1,op2));
+                break;
+            case 2:
+                System.out.println("--------Result is--------\n" +
+                        op1+" - "+op2+" = "+sub(op1,op2));
+                break;
+            case 3:
+                System.out.println("--------Result is--------\n" +
+                        op1+" * "+op2+" = "+mul(op1,op2));
+                break;
+            case 4:
+                System.out.println("--------Result is--------\n" +
+                        op1+" / "+op2+" = "+div(op1,op2));
+                break;
+            case 5:
+                System.exit(0);
+                break;
+            default:
+                //some log message here
+        }
+    }
+    public static int add(int a, int b){
+        return a+b;
+    }
+    public static int sub(int a, int b){
+        return a-b;
+    }
+    public static int mul(int a, int b){
+        return a*b;
+    }
+    public static int div(int a, int b){
+        return a/b;
     }
 }
