@@ -8,7 +8,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
         logger.info("Start of Execution");
-        int option = 5;
+        int option = 0;
         for(;option!=5;) {
             System.out.println("-----Welcome to Calculator-----\n" +
                     "Choose your operation\n" +
