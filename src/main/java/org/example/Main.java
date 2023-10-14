@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) {
         logger.info("Start of Execution");
         int option = 0;
-        for(;option!=5;) {
+        for(;;) {
             System.out.println("-----Welcome to Calculator-----\n" +
                     "Choose your operation\n" +
                     "1. Addition\n" +
@@ -19,6 +19,10 @@ public class Main {
                     "5. Exit");
             Scanner input = new Scanner(System.in);
             option = input.nextInt();
+            if(option == 5){
+                logger.info("End of Execution");
+                System.exit(0);
+            }
             System.out.println("Enter 1st operand: ");
             int op1 = input.nextInt();
             System.out.println("Enter 2nd operand: ");
@@ -50,7 +54,7 @@ public class Main {
                     break;
                 case 5:
                     System.exit(0);
-                    logger.info("End of Execution");
+
                     break;
                 default:
                     logger.warn("Invalid input");

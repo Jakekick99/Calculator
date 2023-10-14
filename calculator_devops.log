@@ -2,3 +2,13 @@
 2023-10-13 23:17:34.373 [main] INFO  org.example.Main - START OP: Add
 2023-10-13 23:17:34.390 [main] INFO  org.example.Main - END OP: Add
 2023-10-14 16:58:26.674 [main] INFO  org.example.Main - Start of Execution
+2023-10-14 17:20:48.324 [main] INFO  org.example.Main - Start of Execution
+2023-10-14 17:20:54.033 [main] INFO  org.example.Main - End of Execution
+2023-10-14 17:21:01.211 [main] INFO  org.example.Main - Start of Execution
+2023-10-14 17:21:03.620 [main] INFO  org.example.Main - START OP: Add
+2023-10-14 17:21:03.635 [main] INFO  org.example.Main - END OP: Add
+2023-10-14 17:21:07.917 [main] INFO  org.example.Main - START OP: Sub
+2023-10-14 17:21:07.918 [main] INFO  org.example.Main - END OP: Sub
+2023-10-14 17:21:12.927 [main] INFO  org.example.Main - START OP: Div
+2023-10-14 17:21:12.929 [main] INFO  org.example.Main - END OP: Div
+2023-10-14 17:21:15.321 [main] INFO  org.example.Main - End of Execution
