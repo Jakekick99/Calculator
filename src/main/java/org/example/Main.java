@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
+        logger.info("Start of Execution");
         System.out.println("-----Welcome to Calculator-----\n" +
                 "Choose your operation\n" +
                 "1. Addition\n" +
@@ -22,26 +23,35 @@ public class Main {
         int op2 = input.nextInt();
         switch(option){
             case 1:
+                logger.info("START OP: Add");
                 System.out.println("--------Result is--------\n" +
                         op1+" + "+op2+" = "+add(op1,op2));
+                logger.info("END OP: Add");
                 break;
             case 2:
+                logger.info("START OP: Sub");
                 System.out.println("--------Result is--------\n" +
                         op1+" - "+op2+" = "+sub(op1,op2));
+                logger.info("END OP: Sub");
                 break;
             case 3:
+                logger.info("START OP: Mul");
                 System.out.println("--------Result is--------\n" +
                         op1+" * "+op2+" = "+mul(op1,op2));
+                logger.info("END OP: Mul");
                 break;
             case 4:
+                logger.info("START OP: Div");
                 System.out.println("--------Result is--------\n" +
                         op1+" / "+op2+" = "+div(op1,op2));
+                logger.info("END OP: Div");
                 break;
             case 5:
                 System.exit(0);
+                logger.info("End of Execution");
                 break;
             default:
-                //some log message here
+                logger.warn("Invalid input");
         }
     }
     public static int add(int a, int b){
