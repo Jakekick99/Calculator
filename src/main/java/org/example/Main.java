@@ -10,7 +10,7 @@ public class Main {
         logger.info("Start of Execution");
         int option = 0;
         for(;;) {
-            System.out.println("-----Welcome to Calculator-----\n" +
+            System.out.println("-----Welcome to Calculator------\n" +
                     "Choose your operation\n" +
                     "1. Addition\n" +
                     "2. Subtraction\n" +
